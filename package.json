@@ -1,0 +1,36 @@
+{
+  "name": "instalite-backend",
+  "version": "1.0.0",
+  "description": "A RESTful social media backend built with Node.js, Express, Prisma ORM and PostgreSQL, featuring CRUD operations, pagination, filtering, sorting and relational likes.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "seed": "prisma db seed",
+    "test": "node tests/run-all-tests.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "keywords": [
+    "instalite",
+    "express",
+    "prisma",
+    "postgresql",
+    "mvc",
+    "rest-api"
+  ],
+  "author": "whoPeterpan",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "prisma": "7.10.1",
+    "supertest": "^7.1.4"
+  }
+}
